@@ -1,0 +1,43 @@
+#ifndef _CONIO_H
+#define _CONIO_H
+cgets(char*);
+cputs(const char*);
+cscanf(const char*,...);
+inpw(unsigned short);
+getch(void);
+getche(void);
+kbhit(void);
+outp(unsigned short,int);
+outpw(unsigned short,unsigned short);
+putch(int);
+ungetch(int);
+void_Cdeclclreol(void);
+void_Cdeclclrscr(void);
+void_Cdecldelline(void);
+int_Cdeclgettext(int left,int top,int right,int bottom,void*destin);
+void_Cdeclgettextinfo(struct text_info* r);
+void_Cdeclgotoxy(int x,int y);
+void_Cdeclhighvideo(void);
+void_Cdeclinsline(void);
+void_Cdecllowvideo(void);
+int_Cdeclmovetext(int left,int top,int right,int bottom,int destleft,int desttop);
+void_Cdeclnormvideo(void);
+int_Cdeclputtext(int left,int top,int right,int bottom,void*source);
+void_Cdecltextattr(int newattr);
+void_Cdecltextbackground(int newcolor);
+void_Cdecltextcolor(int newcolor);
+void_Cdecltextmode(int newmode);
+int_Cdeclwherex(void);
+int_Cdeclwherey(void);
+void_Cdeclwindow(int left,int top,int right,int bottom);
+char*_Cdeclcgets(char*str);
+int_Cdeclcprintf(const char* format,...);
+int_Cdeclcputs(const char* str);
+int_Cdeclcscanf(const char* format,...);
+int_Cdeclgetch(void);
+int_Cdeclgetche(void);
+char*_Cdeclgetpass(const char*prompt);
+int_Cdeclkbhit(void);
+int_Cdeclputch(int c);
+int_Cdeclungetch(int ch);
+#endif
